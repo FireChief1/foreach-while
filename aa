@@ -1,0 +1,45 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1 den başlayarak console dan giirlen sayıya kadar (sayı dahil) ortalama hesaplayıp comsole yazdıran program
+            Console.WriteLine("Saytı gir : ");
+            int sayı = Convert.ToInt32(Console.ReadLine());
+            int sayac = 1;
+            int toplam = 0;
+
+            while (sayac <= sayı)
+            {
+               toplam = toplam + sayac;
+                Console.WriteLine(sayac);
+               sayac = sayac + 1;
+
+            }
+            float ortalama = toplam / (sayac-1);
+            Console.WriteLine((sayac-1)+" tane sayı var");
+            Console.WriteLine("sayıların toplamı : "+toplam);
+            Console.WriteLine("ortalama : "+ortalama);
+
+
+            string[] cars = { "nissan", "mercedes" };
+            foreach (var car in cars)
+            {
+
+                Console.WriteLine(car);
+
+
+
+            }
+        }
+
+        
+	
+
+
+
+    }
+}
